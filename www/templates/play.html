@@ -1,0 +1,16 @@
+<ion-header-bar class="bar-stable">
+  <h1 class="title">Game</h1>
+</ion-header-bar>
+<ion-content scroll="false" on-touch="onTouch($event)" on-release="onRelease()" class="back" style="padding-left: {{windowPadding}}px">
+  <div style="height: {{windowHeight}}px; width: {{windowWidth}}px;" class="window">
+    <div class="score">
+      <span>Score: {{score}}</span>
+    </div>
+    <div class="player"
+         style="margin-top: {{playerTop}}px; margin-left: {{playerLeft}}px; height: {{playerHeight}}px; width: {{playerWidth}}px;">
+    </div>
+    <div class="hole" ng-repeat="hole in holes"
+         style="margin-top: {{hole.holeTop}}px; margin-left: {{hole.holeLeft}}px; height: {{hole.holeHeight}}px; width: {{hole.holeWidth}}px;">
+    </div>
+  </div>
+</ion-content>

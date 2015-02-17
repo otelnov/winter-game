@@ -1,0 +1,17 @@
+.back{
+  background: grey;
+}
+
+.window{
+  background: lightblue;
+}
+
+.player{
+  background: #333;
+  position: absolute;
+}
+
+.hole{
+  background: blue;
+  position: absolute;
+}
